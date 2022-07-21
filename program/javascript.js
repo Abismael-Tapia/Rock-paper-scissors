@@ -2,8 +2,14 @@ const element = ["rock","paper","scissors"];
 var scoreComputer = 0;
 var scorePlayer = 0;
 
-while(scoreComputer < 5 || scorePlayer < 5){
+while(scoreComputer < 5 && scorePlayer < 5){
     game();
+    if(scoreComputer == 5){
+        alert(`Game over COMPUTER WINS! ${scoreComputer} for ${scorePlayer}`);
+    }  if(scorePlayer == 5){
+        alert(`Game over YOU WIN! ${scorePlayer} for ${scoreComputer}`);
+    }
+
 }
     function game(){
             function getComputerChoice(){
