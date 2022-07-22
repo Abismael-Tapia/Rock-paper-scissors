@@ -3,6 +3,8 @@ var scoreComputer = 0;
 var scorePlayer = 0;
 var scoreTie = 0;
 
+    alert("PLEASE OPEN CONSOLE TOOL BEFORE");
+
 function getComputerChoice(){
 
 	let i = Math.floor(Math.random() * 3);
@@ -50,29 +52,33 @@ function playRound(computerSelection, playerSelection){
         scoreTie++;
     }
 }
-	function game (){
+function game (){
 
-                alert("PLEASE OPEN CONSOLE TOOL BEFORE");
+	for (var i = 1; i <= 5; i++) {
 
-		for (var i = 4; i >= 0; i--) {
+		playRound(getComputerChoice(), playerChoice());
 
-			playRound(getComputerChoice(), playerChoice());
+	if (i == 5) {
 
-			if (i == 0) {
+		console.log(`Final Score is 
+			COMPUTER SCORE: ${scoreComputer}
+			PLAYER SCORE: ${scorePlayer}
+			TIE GAMES: ${scoreTie}`)
 
-			console.log(`Final Score is 
-				COMPUTER SCORE: ${scoreComputer}
-				PLAYER SCORE: ${scorePlayer}
-				TIE GAMES: ${scoreTie}`)
+        var scoreHTML = `Final Score is <br>
+            COMPUTER SCORE: ${scoreComputer} <br>
+            PLAYER SCORE: ${scorePlayer} <br>
+            TIE GAMES: ${scoreTie}`
 
-                        var scoreHTML = `Final Score is <br>
-                        COMPUTER SCORE: ${scoreComputer} <br>
-                        PLAYER SCORE: ${scorePlayer} <br>
-                        TIE GAMES: ${scoreTie}`
+            document.getElementById("showScore").innerHTML = scoreHTML;
 
-                        document.getElementById("showScore").innerHTML = scoreHTML;
-		        }
+		    }
+
+
 	        }
+            scoreComputer = 0;
+            scorePlayer = 0;
+            scoreTie = 0;
         }
 	
-       // game();
+       
