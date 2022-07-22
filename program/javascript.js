@@ -1,4 +1,4 @@
-const elements = ["rock", "paper", "scissors"];
+const elements = ["rock" , "paper" , "scissors"];
 var scoreComputer = 0;
 var scorePlayer = 0;
 var scoreTie = 0;
@@ -28,23 +28,23 @@ function playRound(computerSelection, playerSelection){
 	console.log(`Player Selection is: ${playerSelection}`);
 
 	if (computerSelection === "paper" && playerSelection === "rock"){
-            console.log(`You lose ${computerSelection} beats ${playerSelection} :(` );
-            scoreComputer++;
+                console.log(`You lose ${computerSelection} beats ${playerSelection} :(` );
+                scoreComputer++;
     }else if (computerSelection === "paper" && playerSelection === "scissors"){
-            console.log(`You win ${playerSelection} beats ${computerSelection} :)`);
-            scorePlayer++;
+                console.log(`You win ${playerSelection} beats ${computerSelection} :)`);
+                scorePlayer++;
     }else if (computerSelection === "rock" && playerSelection === "scissors"){
-            console.log(`You lose ${computerSelection} beats ${playerSelection} :(`);
-            scoreComputer++;
+                console.log(`You lose ${computerSelection} beats ${playerSelection} :(`);
+                scoreComputer++;
     }else if (computerSelection === "rock" && playerSelection === "paper"){
-            console.log(`You win ${playerSelection} beats ${computerSelection} :)`);
-            scorePlayer++;
+                console.log(`You win ${playerSelection} beats ${computerSelection} :)`);
+                scorePlayer++;
     }else if (computerSelection === "scissors" && playerSelection === "paper"){
-            console.log(`You lose ${computerSelection} beats ${playerSelection} :(`);
-            scoreComputer++;
+                console.log(`You lose ${computerSelection} beats ${playerSelection} :(`);
+                scoreComputer++;
     }else if (computerSelection === "scissors" && playerSelection === "rock"){
-            console.log(`You win ${playerSelection} beats ${computerSelection} :)`);
-            scorePlayer++;
+                console.log(`You win ${playerSelection} beats ${computerSelection} :)`);
+                scorePlayer++;
     }else {
         console.log("TIE");
         scoreTie++;
@@ -52,17 +52,20 @@ function playRound(computerSelection, playerSelection){
 }
 	function game (){
 
+                alert("PLEASE OPEN CONSOLE TOOL BEFORE");
+
 		for (var i = 4; i >= 0; i--) {
 
 			playRound(getComputerChoice(), playerChoice());
 
 			if (i == 0) {
 
-			console.log(`Final Score is: 
-				COMPUTER SCORE ${scoreComputer}
-				PLAYER SCORE ${scorePlayer}
-				TIE GAMES ${scoreTie}`)
-		    }
-	    }
-    }
-	    game();
+			console.log(`Final Score is 
+				COMPUTER SCORE: ${scoreComputer}
+				PLAYER SCORE: ${scorePlayer}
+				TIE GAMES: ${scoreTie}`)
+		        }
+	        }
+        }
+	
+       // game();
