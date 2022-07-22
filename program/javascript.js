@@ -16,7 +16,7 @@ function getComputerChoice(){
 
 function playerChoice(){
 
-	var playerSelection = prompt(`Select a element between ${elements}.`)
+	var playerSelection = prompt(`Select a element between ${elements.join(" ")}.`)
 
 	playerSelection = playerSelection.toLowerCase();
 
