@@ -74,8 +74,7 @@ function game (){
 
 		    }
 
-
-	        }
+	    }
             scoreComputer = 0;
             scorePlayer = 0;
             scoreTie = 0;
