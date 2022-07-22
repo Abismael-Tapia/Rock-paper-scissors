@@ -64,6 +64,13 @@ function playRound(computerSelection, playerSelection){
 				COMPUTER SCORE: ${scoreComputer}
 				PLAYER SCORE: ${scorePlayer}
 				TIE GAMES: ${scoreTie}`)
+
+                        var scoreHTML = `Final Score is <br>
+                        COMPUTER SCORE: ${scoreComputer} <br>
+                        PLAYER SCORE: ${scorePlayer} <br>
+                        TIE GAMES: ${scoreTie}`
+
+                        document.getElementById("showScore").innerHTML = scoreHTML;
 		        }
 	        }
         }

@@ -13,17 +13,25 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-           align-items: center;
+            align-items: center;
         }
         .btnPlayGame {
             background-color: rgb(20, 126, 233);
             color: white;
             font-weight: 900;
         }
+        #showScore {
+            display: inline-block;
+            height: 100px;
+            width: 175px;
+            border: 2px solid rgb(20, 126, 233);;
+            color: red;
+        }
     </style>
     <div class="container">
         <button class="btnPlayGame" onclick="game()">Press here for play game</button>
     </div>
+    <div id="showScore"></div>
         
 </body>
 </html>
