@@ -1,4 +1,3 @@
 # Rock-paper-scissors
 
-This is a simple game Rock Paper Scissors
-to play in browser console :)
+This is a simple game Rock Paper Scissors :)
