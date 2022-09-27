@@ -1,34 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="./program/javascript.js"></script>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="./program/javascript.js" defer></script>
     <title>Rock Paper Scissors</title>
-</head>
-<body>
-    <style>
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .btnPlayGame {
-            background-color: rgb(20, 126, 233);
-            color: white;
-            font-weight: 900;
-        }
-        #showScore {
-            display: inline-block;
-            height: 100px;
-            width: 175px;
-            color: red;
-        }
-    </style>
-    <div class="container">
-        <button class="btnPlayGame" onclick="game()">Press here for play game</button>
+  </head>
+
+  <body>
+    <header>
+      <h1 class="mainTitle">Rock Paper Scissors Game!</h1>
+    </header>
+    <div class="secondTitle">
+      <h2>Select a element!</h2>
     </div>
-    <div id="showScore"></div>
-</body>
+    <div class="container">
+      <div id="secondContainer"></div>
+      <div class="elementsContainer">
+        <img id="rock" src="./img/rock.png" alt="rock image" />
+        <img id="paper" src="./img/paper.png" alt="paper image" />
+        <img id="scissors" src="./img/scissors.png" alt="scissors image" />
+      </div>
+      <div class="scoreContainer">
+        <h3 id="computerScore">Computer: <span id="scoreComp">0</span></h3>
+        <h3 id="playerScore">Player: <span id="scorePla">0</span></h3>
+        <h3 id="tieScore">Tie games: <span id="scoreTie">0</span></h3>
+      </div>
+      <div class="msgContainer">
+        <h2 class="message"></h2>
+      </div>
+    </div>
+    <footer>All right reserved. <span class="year"></span></footer>
+  </body>
+
 </html>
